@@ -1,26 +1,18 @@
 <template>
-  <div class="flex flex-col justify-center w-full h-screen max-w-3xl mx-auto space-y-2">
-    <div>
-      <h1 class="text-2xl">About</h1>
-      <p class="text-lg">I'm learning about Nuxt 3! Here's what I've achieved so far:</p>
+  <div class="w-screen h-screen bg-primary flex items-center justify-center">
+    <div class="container flex items-center justify-center">
+    <login></login>
     </div>
-    <ul class="mx-8 list-disc">
-      <li>
-        Created a new Nuxt 3 project
-      </li>
-      <li>
-        Added Tailwind
-      </li>
-      <li>
-        Created a new page
-      </li>
-    </ul>
   </div>
 </template>
 
 <script>
+import Login from '@/components/Login.vue'
 export default {
-  name: "login"
+  name: "index",
+  components: {
+    Login
+  }
 }
 </script>
 
